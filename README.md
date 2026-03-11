@@ -1,4 +1,4 @@
-# Todo List - React, Vite, TypeScript, Context API, Custom CSS Fundamental Project 21
+# Todo CRUD Operations - React, Vite, TypeScript, Context API, Custom CSS Fundamental Project 21
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![React](https://img.shields.io/badge/React-18.3.1-blue)](https://react.dev/)
@@ -10,7 +10,7 @@ A beginner-friendly todo list application built with React, Vite, and TypeScript
 
 - **Live Demo:** [https://todo-crud-operation.vercel.app/](https://todo-crud-operation.vercel.app/)
 
-<img width="1438" height="847" alt="Screenshot 2026-03-11 at 13 09 46" src="https://github.com/user-attachments/assets/543865e7-bb00-452f-a664-413952028ad0" />
+![Screenshot 2026-03-11 at 13 09 46](https://github.com/user-attachments/assets/543865e7-bb00-452f-a664-413952028ad0)
 
 ## Table of Contents
 
