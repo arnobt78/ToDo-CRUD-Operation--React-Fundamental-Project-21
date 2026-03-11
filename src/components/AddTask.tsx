@@ -1,21 +1,22 @@
+/**
+ * AddTask: form to create or update a task. Uses TaskContext for tasklist and the current "editing" task.
+ * When task.id is set (after clicking edit in ShowTask), submit updates that task; otherwise it adds a new one.
+ */
 import { Plus, Save } from 'lucide-react'
 import { type FormEvent } from 'react'
+import { useTaskContext } from '../hooks/useTaskContext'
 import type { Task } from '../types'
 
-interface AddTaskProps {
-  tasklist: Task[]
-  setTasklist: React.Dispatch<React.SetStateAction<Task[]>>
-  task: Partial<Task>
-  setTask: React.Dispatch<React.SetStateAction<Partial<Task>>>
-}
+export function AddTask() {
+  const { tasklist, setTasklist, task, setTask } = useTaskContext()
 
-export function AddTask({ tasklist, setTasklist, task, setTask }: AddTaskProps) {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const form = e.currentTarget
     const nameInput = form.elements.namedItem('task') as HTMLInputElement | null
     const name = nameInput?.value ?? ''
 
+    // Update existing task (edit flow) or append new task
     if (task.id !== undefined) {
       const date = new Date()
       const updatedTasklist = tasklist.map((todo) =>
@@ -31,6 +32,7 @@ export function AddTask({ tasklist, setTasklist, task, setTask }: AddTaskProps) 
       setTask({})
     } else {
       const date = new Date()
+      // id from timestamp keeps items unique and stable for list keys
       const newTask: Task = {
         id: date.getTime(),
         name,
@@ -41,6 +43,7 @@ export function AddTask({ tasklist, setTasklist, task, setTask }: AddTaskProps) 
     }
   }
 
+  // Button label and icon switch between Add and Update based on edit state
   const isUpdate = task.id !== undefined
 
   return (

@@ -68,6 +68,62 @@ header .themeSelector .activeTheme{
   min-height: 30px;
 }
 
+.homeIntro {
+  margin: 0 auto 24px;
+  width: 100%;
+}
+
+.homeIntroCard {
+  padding: 20px 24px;
+  border-radius: 12px;
+  background-color: #FFFFFF;
+  box-shadow: var(--box-shadow);
+  border-left: 4px solid #03ba5c;
+}
+
+.homeIntroHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.homeIntroIcon {
+  color: #03ba5c;
+  flex-shrink: 0;
+}
+
+.homeIntroTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.homeIntroText {
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: #525252;
+  margin: 0 0 14px 0;
+}
+
+.homeIntroTip {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  background-color: #f0f9ff;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  color: #0c4a6e;
+  line-height: 1.45;
+}
+
+.homeIntroTip svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
 .addTask {
   padding: 20px 15px;
   border-radius: 5px;
@@ -158,6 +214,65 @@ header .themeSelector .activeTheme{
 
 .showTask .clearAll:hover{
   background-color: #1061db;
+}
+
+.showTask .clearAll:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.showTask .clearAll:disabled:hover {
+  background-color: #0f6af3;
+}
+
+.showTaskIntro {
+  margin-bottom: 16px;
+}
+
+.showTaskEducational {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #737373;
+  margin: 0;
+  padding: 12px 14px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  border-left: 3px solid #1363DF;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 48px 24px;
+  margin: 24px 0;
+}
+
+.emptyStateIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  color: #737373;
+}
+
+.emptyStateTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #525252;
+  margin: 0 0 8px 0;
+}
+
+.emptyStateDesc {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: #737373;
+  margin: 0;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .showTask ul{
