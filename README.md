@@ -10,7 +10,7 @@ A beginner-friendly todo list application built with React, Vite, and TypeScript
 
 - **Live Demo:** [https://todo-crud-operation.vercel.app/](https://todo-crud-operation.vercel.app/)
 
----
+<img width="1438" height="847" alt="Screenshot 2026-03-11 at 13 09 46" src="https://github.com/user-attachments/assets/543865e7-bb00-452f-a664-413952028ad0" />
 
 ## Table of Contents
 
